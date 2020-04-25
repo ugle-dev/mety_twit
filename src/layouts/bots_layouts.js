@@ -1,4 +1,5 @@
 import React from 'react';
+import BotCard from '../components/wrappers/card'
 
 class BotsLayout extends React.Component{
     constructor( props) {
@@ -9,7 +10,10 @@ class BotsLayout extends React.Component{
     render() {
         return (
             <div>
-                Hello details page
+                <BotCard 
+                name='Serbay ACAR'
+                failCount='4'
+                successCount='4'/>
             </div>
         )
     }
