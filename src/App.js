@@ -28,13 +28,14 @@ function Copyright() {
 function App() {
   return (
     <Container fixed>
+      
      <AppBar position="static">
-      <Toolbar>
-        <Typography variant="h6" >
-          Methy Twitter Bots
-        </Typography>
-      </Toolbar>
-
+        <Toolbar>
+          <Typography variant="h6" >
+            Methy Twitter Bots
+          </Typography>
+        </Toolbar>
+      </AppBar>
 
       <Router history={history}>
         <Switch>
@@ -43,7 +44,7 @@ function App() {
         </Switch>
       </Router>
     
-    </AppBar>
+
     </Container>
   );
 }

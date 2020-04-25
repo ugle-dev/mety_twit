@@ -9,7 +9,7 @@ class BotsLayout extends React.Component{
     render() {
         return (
             <div>
-                Hello Main Layout
+                Hello details page
             </div>
         )
     }
