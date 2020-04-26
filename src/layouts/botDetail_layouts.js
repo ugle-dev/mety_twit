@@ -1,4 +1,5 @@
 import React from 'react';
+import BotContainer from '../components/wrappers/bot'
 
 class BotsDetailLayout extends React.Component{
     constructor( props) {
@@ -9,7 +10,7 @@ class BotsDetailLayout extends React.Component{
     render() {
         return (
             <div>
-                Hello Bot Detail Layout
+                <BotContainer />
             </div>
         )
     }

@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function BotCard(props) {
   const classes = useStyles();
-  const theme = useTheme();
+  // const theme = useTheme();
 
   return (
     <Card className={classes.root}>
