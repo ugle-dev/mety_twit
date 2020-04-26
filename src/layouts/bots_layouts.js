@@ -1,5 +1,6 @@
 import React from 'react';
-import FullWidthGrid from '../components/wrappers/search'
+import SearchContainer from '../components/wrappers/search'
+import CardsContainer from '../components/wrappers/card'
 
 class BotsLayout extends React.Component{
     constructor( props) {
@@ -10,7 +11,8 @@ class BotsLayout extends React.Component{
     render() {
         return (
             <div>
-                <FullWidthGrid />
+                <SearchContainer />
+                <CardsContainer />
             </div>
         )
     }

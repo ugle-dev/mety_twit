@@ -1,72 +1,66 @@
 import React from 'react';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import IconButton from '@material-ui/core/IconButton';
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
-import Icon from '@material-ui/core/Icon';
+import { makeStyles } from '@material-ui/core/styles';
+import Grid from '@material-ui/core/Grid';
+import BotCard from '../card'
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    display: 'flex',
+    flexGrow: 1,
   },
-  details: {
-    display: 'flex',
-    flexDirection: 'column',
+  paper: {
+    padding: theme.spacing(2),
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
   },
-  content: {
-    flex: '2 0 auto',
-  },
-  cover: {
-    width: 151,
-  },
-  controls: {
-    display: 'flex',
-    alignItems: 'center',
-    paddingLeft: theme.spacing(1),
-    paddingBottom: theme.spacing(1),
-  }
 }));
 
-export default function BotCard(props) {
+export default function CardsContainer() {
   const classes = useStyles();
-//   const theme = useTheme();
 
   return (
-    <Card className={classes.root}>
-      <div className={classes.details}>
-        <CardContent className={classes.content}>
-          <Typography component="h5" variant="h5">
-            {props.name}
-          </Typography>
-        </CardContent>
-        <div className={classes.controls}>
-            <Button variant="contained" color="secondary">
-                {props.successCount}
-            </Button>
-            <Button variant="contained" color="secondary">
-                {props.failCount}
-            </Button>
-
-            <IconButton aria-label="next">
-                <Icon>edit</Icon>
-            </IconButton>
-        </div>
-      </div>
-      <CardMedia
-        className={classes.cover}
-        image={props.mediaURL}
-        title={props.mediaTitle}
-      />
-    </Card>
+    <div className={classes.root}>
+      <Grid container spacing={3}>
+        <Grid item xs={12} sm={6}>
+        <BotCard 
+            name = 'Bot 1'
+            successCount = '12'
+            failCount = '5'
+            mediaURL = 'https://res.cloudinary.com/practicaldev/image/fetch/s--q8mBCQBW--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/1ykamh5rf8ukqajqqpaq.png'
+            />
+        </Grid>
+        <Grid item xs={12} sm={6}>
+        <BotCard 
+            name = 'Bot 2'
+            successCount = '12'
+            failCount = '5'
+            mediaURL = 'https://res.cloudinary.com/practicaldev/image/fetch/s--q8mBCQBW--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/1ykamh5rf8ukqajqqpaq.png'
+            />
+        </Grid>
+        <Grid item xs={12} sm={6}>
+        <BotCard 
+            name = 'Bot 3'
+            successCount = '12'
+            failCount = '5'
+            mediaURL = 'https://res.cloudinary.com/practicaldev/image/fetch/s--q8mBCQBW--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/1ykamh5rf8ukqajqqpaq.png'
+            />
+        </Grid>
+        <Grid item xs={12} sm={6}>
+        <BotCard 
+            name = 'Bot 4'
+            successCount = '12'
+            failCount = '5'
+            mediaURL = 'https://res.cloudinary.com/practicaldev/image/fetch/s--q8mBCQBW--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/1ykamh5rf8ukqajqqpaq.png'
+            />
+        </Grid>
+        <Grid item xs={12} sm={6}>
+        <BotCard 
+            name = 'Bot 5'
+            successCount = '12'
+            failCount = '5'
+            mediaURL = 'https://res.cloudinary.com/practicaldev/image/fetch/s--q8mBCQBW--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/1ykamh5rf8ukqajqqpaq.png'
+            />
+        </Grid>
+      </Grid>
+    </div>
   );
 }
-
-//props
-// failCount :: total submitted twit count
-// successCount :: total submitted success count
-
-//mediaURL :: resim path bilgisi
-//mediaTitle :: Resim basligi
