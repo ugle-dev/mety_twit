@@ -1,15 +1,16 @@
 import React from 'react';
-import { Switch, Route, Router } from 'react-router-dom';
-import history from './helpers/history';
 
+// Containers
 import Container from '@material-ui/core/Container';
+
+// Components
 import Typography from '@material-ui/core/Typography';
 import AppBar  from '@material-ui/core/AppBar';
 import Toolbar  from '@material-ui/core/Toolbar';
 import Link from '@material-ui/core/Link';
 
-import BotsLayout from './layouts/bots_layouts'
-import BotDetailLayout from './layouts/botDetail_layouts'
+// router
+import BrowserRouter from './Route/Router';
 
 function Copyright() {
   return (
@@ -37,12 +38,7 @@ function App() {
         </Toolbar>
       </AppBar>
 
-      <Router history={history}>
-        <Switch>
-          <Route path="/" exact component={BotsLayout} />
-          <Route path="/bot" component={BotDetailLayout} />
-        </Switch>
-      </Router>
+      <BrowserRouter />
     
 
     </Container>
