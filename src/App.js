@@ -3,28 +3,14 @@ import React from 'react';
 // Containers
 import Container from '@material-ui/core/Container';
 
-// Components
+// MateriaUI Components
 import Typography from '@material-ui/core/Typography';
 import AppBar  from '@material-ui/core/AppBar';
 import Toolbar  from '@material-ui/core/Toolbar';
-import Link from '@material-ui/core/Link';
 
 // router
 import BrowserRouter from './Route/Router';
-
-function Copyright() {
-  return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      {'Copyright © '}
-      <Link color="inherit" href="https://material-ui.com/">
-        Your Website
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
-
+import Copyright from './containers/Copyright';
 
 function App() {
   return (
@@ -39,8 +25,7 @@ function App() {
       </AppBar>
 
       <BrowserRouter />
-    
-
+      <Copyright />
     </Container>
   );
 }
