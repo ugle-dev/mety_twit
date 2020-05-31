@@ -63,10 +63,3 @@ export default function BotCard(props) {
     </Card>
   );
 }
-
-//props
-// failCount :: total submitted twit count
-// successCount :: total submitted success count
-
-//mediaURL :: resim path bilgisi
-//mediaTitle :: Resim basligi
