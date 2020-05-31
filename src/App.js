@@ -1,32 +1,22 @@
 import React from 'react';
 
-// Containers
-import Container from '@material-ui/core/Container';
+// styling
+import './styles/app.css';
 
-// MateriaUI Components
-import Typography from '@material-ui/core/Typography';
-import AppBar  from '@material-ui/core/AppBar';
-import Toolbar  from '@material-ui/core/Toolbar';
+// containers
+import Header from './containers/Header';
+import Copyright from './containers/Copyright';
 
 // router
 import BrowserRouter from './Route/Router';
-import Copyright from './containers/Copyright';
 
 function App() {
-  return (
-    <Container fixed>
-      
-      <AppBar position="static">
-        <Toolbar>
-          <Typography variant="h6" >
-            Methy Twitter Bots
-          </Typography>
-        </Toolbar>
-      </AppBar>
-
+  return (      
+    <div className="App">
+      <Header />
       <BrowserRouter />
       <Copyright />
-    </Container>
+    </div>
   );
 }
 
