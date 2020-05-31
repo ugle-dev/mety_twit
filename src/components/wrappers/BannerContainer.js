@@ -4,6 +4,7 @@ import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import TextField from '@material-ui/core/TextField';
 import SearchIcon from '@material-ui/icons/Search';
+import SearchBar from './SearchBar';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -16,22 +17,12 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function SearchContainer() {
-  const classes = useStyles();
-
+const BannerContainer = () => {
+  const CLASSES = useStyles();
   return (
-    <div className={ classes.root }>
+    <div className={ CLASSES.root }>
       <Grid container spacing={ 3 } alignItems="flex-end">
-        <Grid item xs={ 12 } sm={ 10 }>
-          <Grid container spacing={ 1 } alignItems="flex-end" >
-            <Grid item>
-              <SearchIcon />
-            </Grid>
-            <Grid item >
-              <TextField id="input-with-icon-grid" label="With a grid" />
-            </Grid>
-          </Grid>
-        </Grid>
+        <SearchBar />
         <Grid item xs={ 12 } sm={ 2 }>
           <Button variant="outlined" color="primary">
             Add Bot
@@ -40,4 +31,6 @@ export default function SearchContainer() {
       </Grid>
     </div>
   );
-}
+};
+
+export default BannerContainer;

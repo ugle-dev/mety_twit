@@ -1,21 +1,12 @@
 import React from 'react';
-import SearchContainer from '../components/wrappers/search';
 import CardsContainer from '../components/wrappers/card';
+import BannerContainer from '../components/wrappers/BannerContainer';
 
-class BotsLayout extends React.Component{
-  constructor( props) {
-    super(props);
-    this.state = {};
-  }
-
-  render() {
-    return (
-      <div>
-        <SearchContainer />
-        <CardsContainer />
-      </div>
-    );
-  }
-}
+const BotsLayout = () => (
+  <div>
+    <BannerContainer />
+    <CardsContainer />
+  </div>
+);
 
 export default BotsLayout;

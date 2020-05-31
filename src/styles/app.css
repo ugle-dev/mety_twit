@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.App {
+  display: block;
+  width: 100%;
+}
+
+.header-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-container .header {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #fff;
+  font-size: 24px;
+  background: #0091ff;
+  box-shadow: 2px 3px 5px 0px #007ddc;
+}
+
+.searchbar-wrapper {
+  width: 50%;
+}
+.searchbar-flexbox {
+  display: flex;
+  justify-content: flex-start;
+  background: transparent;
+  margin-left: 17%;
+}
+
+.searchbar-search {
+  margin: 20px;
+}
+
+.searchbar-search > div {
+  display: inline-block;
+  position: relative;
+}
+
+.searchbar-search > div:after {
+  content: "";
+  background: #0091ff;
+  width: 3px;
+  height: 13px;
+  position: absolute;
+  top: 17px;
+  right: -1px;
+  transform: rotate(135deg);
+}
+
+.searchbar-search > div > input {
+  color: #0091c2;
+  font-size: 13px;
+  background: transparent;
+  width: 0px;
+  height: 0px;
+  padding: 10px;
+  border: solid 1px #0091ff;
+  outline: none;
+  border-radius: 35px;
+  transition: width 0.5s;
+}
+
+.searchbar-search > div > input::placeholder {
+  color: #efefef;
+  opacity: 1;
+}
+
+.searchbar-search > div > input::-ms-placeholder {
+  color: #efefef;
+}
+
+.searchbar-search > div > input::-ms-input-placeholder {
+  color: #efefef;
+}
+
+.searchbar-search > div > input:focus,
+.searchbar-search > div > input:valid {
+  width: 250px;
+}
