@@ -14,5 +14,4 @@ An application which can make easy your life while enterprise twitting.
 ### TODO - For the developers
   - [x] Initialize eslint
   - [x] Initialize basic Browser Router
-  - [ ] Add CSS loader for SCSS and LESS
   - [ ] Make free for MaterialUI
