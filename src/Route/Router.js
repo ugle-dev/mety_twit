@@ -9,12 +9,12 @@ import BotsDetailLayout from '../layouts/botDetail_layouts';
 import History from '../helpers/History';
 
 const BrowserRouter = ({}) => (
-    <Router history={ History }>
-        <Switch>
-            <Route path="/" exact component={ BotsLayout } />
-            <Route path="/bot" component={ BotsDetailLayout } />
-        </Switch>
-    </Router>
+  <Router history={ History }>
+    <Switch>
+      <Route path="/" exact component={ BotsLayout } />
+      <Route path="/bot" component={ BotsDetailLayout } />
+    </Switch>
+  </Router>
 );
 
 export default BrowserRouter;

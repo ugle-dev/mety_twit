@@ -13,36 +13,36 @@ import Link from '@material-ui/core/Link';
 import BrowserRouter from './Route/Router';
 
 function Copyright() {
-    return (
-        <Typography variant="body2" color="textSecondary" align="center">
-            {'Copyright © '}
-            <Link color="inherit" href="https://material-ui.com/">
+  return (
+    <Typography variant="body2" color="textSecondary" align="center">
+      {'Copyright © '}
+      <Link color="inherit" href="https://material-ui.com/">
         Your Website
-            </Link>{' '}
-            {new Date().getFullYear()}
-            {'.'}
-        </Typography>
-    );
+      </Link>{' '}
+      {new Date().getFullYear()}
+      {'.'}
+    </Typography>
+  );
 }
 
 
 function App() {
-    return (
-        <Container fixed>
+  return (
+    <Container fixed>
       
-            <AppBar position="static">
-                <Toolbar>
-                    <Typography variant="h6" >
+      <AppBar position="static">
+        <Toolbar>
+          <Typography variant="h6" >
             Methy Twitter Bots
-                    </Typography>
-                </Toolbar>
-            </AppBar>
+          </Typography>
+        </Toolbar>
+      </AppBar>
 
-            <BrowserRouter />
+      <BrowserRouter />
     
 
-        </Container>
-    );
+    </Container>
+  );
 }
 
 export default App;
