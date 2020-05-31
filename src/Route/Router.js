@@ -8,7 +8,7 @@ import BotsDetailLayout from '../layouts/botDetail_layouts';
 // helper -> browser history
 import History from '../helpers/History';
 
-const BrowserRouter = ({props}) => (
+const BrowserRouter = ({}) => (
   <Router history={ History }>
     <Switch>
       <Route path="/" exact component={ BotsLayout } />
