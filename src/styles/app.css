@@ -30,8 +30,14 @@
   box-shadow: 2px 3px 5px 0px #007ddc;
 }
 
+.banner {
+  width: 100%;
+  white-space: nowrap;
+}
+
 .searchbar-wrapper {
   width: 50%;
+  float: left;
 }
 .searchbar-flexbox {
   display: flex;
@@ -89,4 +95,32 @@
 .searchbar-search > div > input:focus,
 .searchbar-search > div > input:valid {
   width: 250px;
+}
+
+.add-bot-button {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  float: left;
+  margin-top: 20px;
+}
+
+.add-bot-button button {
+  margin-right: 20%;
+  border: none;
+  border-collapse: collapse;
+  background: transparent;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid silver;
+  color: gray;
+  border-radius: 10px;
+  transition: 0.4s ease-in-out;
+}
+
+.add-bot-button button:hover {
+  cursor: pointer;
+  border: 1px solid gray;
+  color: silver;
 }
