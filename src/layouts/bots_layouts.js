@@ -1,6 +1,6 @@
 import React from 'react';
-import SearchContainer from '../components/wrappers/search'
-import CardsContainer from '../components/wrappers/card'
+import SearchContainer from '../components/wrappers/search';
+import CardsContainer from '../components/wrappers/card';
 
 class BotsLayout extends React.Component{
     constructor( props) {
@@ -14,7 +14,7 @@ class BotsLayout extends React.Component{
                 <SearchContainer />
                 <CardsContainer />
             </div>
-        )
+        );
     }
 }
 
